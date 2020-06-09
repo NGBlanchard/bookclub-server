@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 
 
 // DB Config
-const db = MONGODB_URL;
+const db = `${MONGODB_URL}`;
 
 // Connect to Mongo
 mongoose
