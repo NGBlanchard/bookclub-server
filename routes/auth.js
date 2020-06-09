@@ -37,7 +37,6 @@ authRoutes.post('/', async (req, res) => {
       user: {
         id: user.id,
         username: user.username,
-        email: user.email,
         profile_img: user.profile_img,
         current: user.current,
         description: user.description,
@@ -86,7 +85,6 @@ authRoutes.post('/register', async (req, res) => {
     const newUser = new User({
       id,
       username,
-      email,
       password: hash
     });
 
